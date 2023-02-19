@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" prefHeight="198.0" prefWidth="274.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.downloadfiles.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Enter the URL">
+        <font>
+            <Font size="16"/>
+        </font>
+    </Label>
+    <BorderPane>
+        <center>
+            <TextField fx:id="downloadUrl" prefHeight="32.0" prefWidth="234.0" />
+        </center>
+    </BorderPane>
+    <Button fx:id="downloadButton" mnemonicParsing="false" text="Download" />
+    <StackPane>
+        <ProgressBar fx:id="progressBar" visible="false" prefWidth="250" progress="0" />
+        <Label visible="false" fx:id="progressLabel" text="0%" />
+    </StackPane>
+
+
+</VBox>
